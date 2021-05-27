@@ -58,4 +58,63 @@ $(document).ready(function () {
       $(".modal__dialog").removeClass("modal__dialog--visible");
     }
   });
+  // Обработка форм
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Имя должно быть больше двух букв",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Phone is required",
+      },
+    },
+  });
+  $(".modal__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Имя должно быть больше двух букв",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Phone is required",
+      },
+    },
+  });
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Please specify your name",
+        minlength: "Имя должно быть больше двух букв",
+      },
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+      phone: {
+        required: "Phone is required",
+      },
+    },
+  });
+  $(".subscribe").validate({
+    errorClass: "invalid",
+    messages: {
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+  $(".phone_us").mask("+7 (000) 000-00-00");
 });
