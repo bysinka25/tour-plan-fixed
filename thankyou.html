@@ -19,7 +19,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="index.html" class="logo" name="top">
+          <a href="index.html" class="logo" id="#top">
             <img
               src="image/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
@@ -146,18 +146,17 @@
       <!-- /.container -->
     </nav>
     <!--breadcrumb -->
-    <section class="input">
+    <section class="back">
       <div class="container">
-        <div class="input-info">
-          <div class="input-info__text">
-            <h1 class="input-info__title">Message arrived</h1>
-            <h3 class="input-info__subtitle"></h3>Thank you will be contacted !
+        <div class="back-info">
+          <div class="back-info__text">
+            <h1 class="back-info__title">Message arrived</h1>
+            <p class="Tbackinfo__subtitle">Thank you will be contacted !</p>
           </div>
-          <div class="input-form">
-            <a class="input__link"href="index.html"><button class="input__button">
-              Go back
-            </button></a>
+          <div class="back-form">
+            <a class="back__link" href="index.html"> Go back </a>
           </div>
+        </div>
       </div>
       <!-- /.container -->
     </section>
@@ -289,7 +288,7 @@
                   />
                 </div>
                 <div class="footer__tel">
-                  <a class="footer__item" href="tel:269 1500"
+                  <a class="footer__item" href="tel:2691500"
                     >Tel (business hours) : 269 1500<br
                   /></a>
 
@@ -323,18 +322,26 @@
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input phone_us"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="10"
+                />
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"

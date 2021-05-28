@@ -64,23 +64,7 @@ $(document).ready(function () {
     messages: {
       name: {
         required: "Please specify your name",
-        minlength: "Имя должно быть больше двух букв",
-      },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com",
-      },
-      phone: {
-        required: "Phone is required",
-      },
-    },
-  });
-  $(".modal__form").validate({
-    errorClass: "invalid",
-    messages: {
-      name: {
-        required: "Please specify your name",
-        minlength: "Имя должно быть больше двух букв",
+        minlength: "The name must be more than two letters",
       },
       email: {
         required: "We need your email address to contact you",
@@ -96,7 +80,7 @@ $(document).ready(function () {
     messages: {
       name: {
         required: "Please specify your name",
-        minlength: "Имя должно быть больше двух букв",
+        minlength: "The name must be more than two letters",
       },
       email: {
         required: "We need your email address to contact you",

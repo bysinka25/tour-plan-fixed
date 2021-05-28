@@ -368,7 +368,6 @@ input {
 
 .invalid {
   color: #ec1f46;
-  border-bottom: 1px solid #ec1f46;
 }
 
 .logo {
@@ -934,6 +933,8 @@ input {
   background-color: #ec1f46;
   border: none;
   border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .reviews {
@@ -1388,7 +1389,7 @@ input {
   padding: 0 23px;
   height: 50px;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .footer__input-group {
@@ -1406,6 +1407,7 @@ input {
       flex-basis: 100%;
   height: 123px;
   resize: none;
+  margin-top: 3px;
 }
 
 .footer__button {
@@ -1465,39 +1467,33 @@ input {
   width: 100%;
 }
 
-.input {
+.back {
   font-family: 'Nunito';
 }
 
-.input-info__text {
+.back-info__text {
   text-align: center;
   margin-bottom: 15px;
 }
 
-.input-info__title {
+.back-info__title {
   color: #0A223D;
   font-size: 22px;
   margin-top: 0px;
 }
 
-.input-info__subtitle {
+.back-info__subtitle {
   color: #0A223D;
   font-weight: 400;
   font-size: 14px;
 }
 
-.input__link {
+.back__link {
   text-decoration: none;
-}
-
-.input-form {
-  margin-bottom: 30px;
-}
-
-.input__button {
-  min-width: 100px;
+  color: #ffffff;
+  max-width: 100px;
   border-radius: 4px;
-  border: none;
+  border: 2px solid #ec1f46;
   padding: 18px;
   font-style: normal;
   font-weight: bold;
@@ -1508,6 +1504,11 @@ input {
   cursor: pointer;
   display: block;
   margin: auto;
+  text-align: center;
+}
+
+.back-form {
+  margin-bottom: 30px;
 }
 
 .modal__overlay {
