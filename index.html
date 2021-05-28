@@ -7,8 +7,11 @@
     <title>Best Tour Plan - Hotel Booking</title>
     <link rel="stylesheet" href="sass/normalize.scss" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700;900&family=Nunito:wght@200;300;400;600;700;800&display=swap"
       rel="stylesheet"
@@ -24,9 +27,13 @@
               src="image/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
               class="logo__image"
+              data-aos="fade-right"
+              data-aos-delay="100"
             />
           </a>
           <form
+            data-aos="fade-right"
+            data-aos-delay="300"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden"
           >
@@ -41,7 +48,12 @@
           </form>
 
           <!-- /.search -->
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="500"
+          >
             <img
               src="image/user-avatar.jpeg"
               alt="avatar: Nathan"
@@ -473,7 +485,11 @@
       <div class="container container-activities">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img src="image/active-1.jpg" alt="" class="card__img" />
             <h3 class="card__title">
               The curious corner <br />
@@ -484,7 +500,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img src="image/active-2.jpg" alt="" class="card__img" />
             <h3 class="card__title">
               Gymkhana club golf <br />
@@ -495,7 +515,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img src="image/active-3.jpg" alt="" class="card__img" />
             <h3 class="card__title">
               Tamarind falls hiking <br />
@@ -506,7 +530,11 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img src="image/active-4.jpg" alt="" class="card__img" />
             <h3 class="card__title">
               The blue marine discovery<br />
@@ -527,7 +555,11 @@
       <div class="container">
         <div class="footer-wrapper footer-adaptive">
           <a href="#top" class="logo footer__logo"
-            ><img src="image/vertical-logo.svg" alt="Logo: Best Tour Plan"
+            ><img
+              src="image/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              data-aos="fade-right"
+              data-aos-delay="500"
           /></a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -789,6 +821,7 @@
     <script src="js/jquery.mask.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/slider.js"></script>
   </body>
 </html>
