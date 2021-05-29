@@ -183,11 +183,26 @@
     background-color: $primary
     color: $light
   .search__button:hover
-    background-color: $dark
+    background-color: $primary
     cursor: pointer
   .navbar-menu__link:hover
     color: $light
     cursor: pointer
+.navbar-menu__link:hover
+  color: $footer
+  cursor: pointer
+.footer__cards:hover
+  color: $footer
+  cursor: pointer
+.footer__link:hover
+  color: $footer
+  cursor: pointer
+.footer__item--email:hover
+  color: $footer
+  cursor: pointer
+.footer__icon:hover
+  background-color: transparent
+
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -356,6 +371,8 @@
     &__info
       order: -1
       margin-top: 15px
+  .booking
+    margin-top: 10px
 @media (max-width: 576px)
   .container
     width: 87%
@@ -500,14 +517,16 @@
 
   .footer__span
     width: 300px
+    font-size: 12px
   .footer__сards
-    font-size: 10px
+    font-size: 12px
     margin-right: 10px
     justify-content: space-between
     margin-bottom: 10px
   .cards-wrapper
     margin-top: 30px
     flex-wrap: wrap
+    font-size: 12px
   .footer__contacts-input
     display: flex
     flex-direction: column
@@ -530,7 +549,7 @@
   .footer__item
     align-items: flex-start
   .footer__cards
-    font-size: 10px
+    font-size: 12px
     margin-bottom: 10px
     margin-right: 10px
   .footer-wrapper
