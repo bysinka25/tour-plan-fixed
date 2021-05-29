@@ -49,6 +49,7 @@
     &__input
       max-width: 340px
   .hotel
+    padding-bottom: 56px
     &-grid
       flex-direction: column
     &-slider
@@ -64,8 +65,7 @@
       justify-content: space-between
   .booking
     width: 340px
-  .map
-    width: 340px
+    margin-bottom: 0px
   .reviews
     &-slider
       &__item
@@ -75,7 +75,10 @@
       font-size: 30px
       
   .activities
+    padding-top: 26px
+    padding-bottom: 49px
     &__title
+      margin-top: 0px
       margin-bottom: 57px
     &-wrapper
       flex-wrap: wrap
@@ -123,9 +126,12 @@
         grid-row: 4
         margin-left: 0
     &__title
-      margin-top: 30px
+      margin-top: 20px
       &--inline
-        row-gap: 50px
+        margin-left: 20px
+        margin-top: 30px
+      &-contact
+        margin-top: 30px
     &__logo
       max-width: 104px
       max-height: 120px
@@ -140,7 +146,7 @@
       grid-row-gap: 38px
   .footer__contacts-input
     max-width: 539px
-  .cards-wrapper 
+  .cards__wrapper 
   .cards__wrapper--mobile
     margin-top: -36px
   .modal
@@ -148,12 +154,40 @@
       max-width: 400px
       padding-right: 40px
       padding-left: 40px
+    &__overlay
     &__input
       max-width: 95%
     &__message
       max-width: 95%
     &__form
       text-align: center
+  #map
+    height: 213px
+    border-radius: 10px
+    overflow: hidden
+    margin-left: auto
+    margin-right: auto
+  .newsletter
+    padding-top: 93px
+    padding-bottom: 93px
+  .booking__button:hover
+    background-color: $primary
+    color: $light
+  .subscribe__button:hover
+    background-color: $primary
+    color: $light
+  .card__button:hover
+    background-color: $primary
+    color: $light
+  .footer__button:hover
+    background-color: $primary
+    color: $light
+  .search__button:hover
+    background-color: $dark
+    cursor: pointer
+  .navbar-menu__link:hover
+    color: $light
+    cursor: pointer
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -164,8 +198,8 @@
     &__user
       flex-direction: column
       justify-content: center
-    &__mobile
-      &_fixed
+    &--mobile
+      &-fixed
         position: fixed
         left: 0
         right: 0
@@ -333,9 +367,12 @@
     height: 70px
     padding-top: 26px
     padding-bottom: 26px
+  .navbar--mobile-fixed
+    width: 100%
   .logo
     width: 99px
   .hotel
+    padding-bottom: 40px
     &-name
       margin-right: 0
     &-right
@@ -343,11 +380,12 @@
       align-content: center
     &-info
       margin-bottom: 18px
-  .hotel__slider
-    margin-bottom: 10px
   .booking
+    margin-top: 20px
     min-width: 280px
     height: 210px
+  .swiper-container
+    margin-bottom: 20px
   .newsletter
     padding: 76px 0 83px 0
     &-title
@@ -392,7 +430,7 @@
   .card
     width: 98%
   .activities
-    padding-top: 30px
+    padding-top: 5px
     &__title
       margin: auto
       margin-bottom: 36px
@@ -486,18 +524,26 @@
   .footer__item
     align-content: center
   .footer__cards
-    font-size: 11px
+    font-size: 10px
     margin-bottom: 10px
+    margin-right: 10px
   .footer-wrapper
     margin-bottom: 30px
-  .cards-wrapper 
+  .cards__wrapper 
+    flex-direction: column
+    flex-wrap: wrap
   .cards__wrapper--mobile
+    
     margin-top: -56px
   .modal
+    
     &__dialog
+      
       width: 300px
       padding-right: 30px
       padding-left: 30px
+    
+       
     &__input
       max-width: 98%
     &__message
@@ -512,3 +558,9 @@
     &__info
       order: -1
       margin-top: 15px
+  #map
+    
+    margin-left: auto
+    margin-right: auto
+    width: 100%
+    height: 173px

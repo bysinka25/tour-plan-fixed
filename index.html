@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar navbar__mobile_fixed">
+    <header class="navbar navbar--mobile navbar--mobile-fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo" name="top">
+          <a href="#" class="logo" id="#top">
             <img
               src="image/horizontal-logo.svg"
               alt="logo: Best Tour Plan"
@@ -115,26 +115,68 @@
                 </button>
               </form>
             </li>
-            <li class="navbar-menu__item" name="main">
-              <a href="#" class="navbar-menu__link">All Deals</a>
+            <li class="navbar-menu__item">
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                >All Deals</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotels</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="250"
+                >Hotels</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Activities</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+                >Activities</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="550"
+                >Hotel Day Packages</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Restaurants</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+                >Restaurants</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Events</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="850"
+                >Events</a
+              >
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="navbar-menu__link">Rodrigues</a>
+              <a
+                href="#"
+                class="navbar-menu__link"
+                data-aos="zoom-in"
+                data-aos-delay="1000"
+                >Rodrigues</a
+              >
             </li>
           </ul>
         </div>
@@ -348,7 +390,9 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2 class="reviews__title" data-aos="zoom-in-up" data-aos-delay="500">
+          What people think about us
+        </h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <!-- Slides -->
@@ -496,7 +540,7 @@
               of chamarel
             </h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -511,7 +555,7 @@
               course
             </h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -526,7 +570,7 @@
               trip - full day
             </h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -541,7 +585,7 @@
               quest
             </h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -677,23 +721,33 @@
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__img-wrapper">
                   <img
-                    class="footer__img"
+                    class="footer__img--tel"
                     src="image/phone.svg"
                     alt="icon: call phone"
                   />
                 </div>
                 <div class="footer__tel">
-                  <a class="footer__item" href="tel:269 1500"
-                    >Tel (business hours) : 269 1500<br
-                  /></a>
+                  <p class="footer__item">
+                    Tel (business hours) :
+                    <a class="footer__link--tel" href="tel:2691500">
+                      269 1500<br
+                    /></a>
+                  </p>
 
-                  <a class="footer__item" href="tel:52-56-61-38">
-                    Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am –
-                    20:00 pm)
-                  </a>
-                  <a class="footer__item" href="tel:52-56-61-38"
-                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
-                  </a>
+                  <p class="footer__item">
+                    Tel (hotline) Monday - Saturday :
+                    <a class="footer__link" href="tel:52-56-61-38">
+                      52-56-61-38 </a
+                    >(08:00 am – 20:00 pm)
+                  </p>
+
+                  <p class="footer__item">
+                    Tel (hotline) Sunday :
+                    <a class="footer__link--tel" href="tel:52-56-61-38">
+                      52-56-61-38
+                    </a>
+                    (08:00 am – 14:00 pm)
+                  </p>
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
@@ -730,7 +784,7 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input phone_us"
+                  class="input footer__input footer__input--phone_us"
                   placeholder="Phone Number*"
                   name="phone"
                   required
@@ -755,7 +809,7 @@
         </div>
         <!-- /.footer-wrapper -->
         <div class="cards">
-          <div class="cards-wrapper cards__wrapper--mobile">
+          <div class="cards__wrapper cards__wrapper--mobile">
             <div class="footer__span">
               <a href="#" class="footer__cards">Disclaimer</a>
               <a href="#" class="footer__cards">Conditions of use</a>
@@ -789,7 +843,7 @@
           />
           <input
             type="tel"
-            class="input modal__input phone_us"
+            class="input modal__input modal__input--phone_us"
             placeholder="Phone Number*"
             name="phone"
             required
