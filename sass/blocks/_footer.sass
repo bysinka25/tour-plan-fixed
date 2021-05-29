@@ -79,12 +79,13 @@
     color: $footer
     text-decoration: none
     margin: 0
-    flex-wrap: wrap
+    justify-content: flex-start
+    width: 100%
     &--mb-2
       margin-bottom: 21px
   &__img
     &-wrapper
-      min-width: 40px
+      min-width: 30px
   &__text
     color: $footer
     margin-bottom: 22px
@@ -175,5 +176,7 @@
     margin-right: 2px
   .footer__img--tel
     position: top
-
+  .footer__item--text
+    display: flex
+    flex-wrap: wrap
   
