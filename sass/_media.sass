@@ -190,28 +190,38 @@
     cursor: pointer
     text-decoration: none
   .footer__cards:hover
-    color: $footer
+    color: $light
     cursor: pointer
+    text-decoration: none
   .footer__link:hover
     color: $footer
+    text-decoration: none
     cursor: pointer
   .footer__item--email:hover
     color: $footer
     cursor: pointer
+    text-decoration: none
   .footer__icon:hover
     background-color: transparent
+    text-decoration: none
   .breadcrumb-list__item:hover
     text-decoration: none
     cursor: pointer
+    text-decoration: none
   .user__name:hover
     text-decoration: none
     cursor: pointer
-   
+    text-decoration: none
   .booking__num:hover
     text-decoration: none
     cursor: pointer
-    
-
+    text-decoration: none
+  .reviews-slider__button
+    margin-left: 0
+    margin-right: 0
+  .modal__dialog
+    overflow: auto
+    max-height: 95%
 @media (max-width: 767px)
   body
     padding-top: 70px
@@ -365,6 +375,8 @@
       max-width: 400px
       padding-right: 40px
       padding-left: 40px
+      overflow: auto
+      max-height: 95%
     &__input
       max-width: 95%
     &__message
@@ -382,6 +394,7 @@
       margin-top: 15px
   .booking
     margin-top: 10px
+  
 @media (max-width: 576px)
   .container
     width: 87%
@@ -516,22 +529,23 @@
   .footer__title
     max-width: 260px
     &-contact
-
   .footer__info
     flex-direction: column
     margin-top: 10px
     margin-bottom: 15px
     display: flex
-    margin-right: -30px
-
+    max-width: 100px
+    margin-top: 10px
+    order: -1
+    margin-top: 0
   .footer__span
     width: 300px
     font-size: 12px
   .footer__сards
     font-size: 12px
-    margin-right: 10px
     justify-content: space-between
     margin-bottom: 10px
+    margin-right: 20px
   .cards-wrapper
     margin-top: 30px
     flex-wrap: wrap
@@ -540,10 +554,6 @@
     display: flex
     flex-direction: column
     margin-top: 22px
-  .footer__info
-    margin-top: 10px
-    order: -1
-    margin-top: 0
   .footer__button
     margin-top: 0
     width: 160px
@@ -560,12 +570,12 @@
   .footer__cards
     font-size: 12px
     margin-bottom: 10px
-    margin-right: 10px
   .footer-wrapper
     margin-bottom: 30px
   .cards__wrapper 
     flex-direction: column
     flex-wrap: wrap
+    margin-bottom: 10px
   .cards__wrapper--mobile
     
     margin-top: -56px
@@ -602,3 +612,8 @@
     padding-bottom: 30px
   .footer__title
     margin-top: 0
+  .footer__cards--link
+    margin-right: 0px
+  ..modal__dialog
+    overflow: auto
+    max-height: 95%

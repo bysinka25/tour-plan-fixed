@@ -44,6 +44,10 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    var $body = $(document.body);
+    var oldWidth = $body.innerWidth();
+    $body.css("overflow", "hidden");
+    $body.width(oldWidth);
   }
   function closeModal(event) {
     event.preventDefault();
@@ -51,13 +55,25 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    var $body = $(document.body);
+    $body.css("overflow", "auto");
+    $body.width("auto");
   }
+
   $(document).keyup(function (event) {
     if (event.which == "27") {
       $(".modal__overlay").removeClass("modal__overlay--visible");
       $(".modal__dialog").removeClass("modal__dialog--visible");
     }
   });
+  $("#adminModal")
+    .modal()
+    .on("shown", function () {
+      $("body").css("overflow", "hidden");
+    })
+    .on("hidden", function () {
+      $("body").css("overflow", "auto");
+    });
   // Обработка форм
   $(".modal__form").validate({
     errorClass: "invalid",
