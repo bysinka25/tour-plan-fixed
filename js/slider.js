@@ -66,14 +66,6 @@ $(document).ready(function () {
       $(".modal__dialog").removeClass("modal__dialog--visible");
     }
   });
-  $("#adminModal")
-    .modal()
-    .on("shown", function () {
-      $("body").css("overflow", "hidden");
-    })
-    .on("hidden", function () {
-      $("body").css("overflow", "auto");
-    });
   // Обработка форм
   $(".modal__form").validate({
     errorClass: "invalid",
