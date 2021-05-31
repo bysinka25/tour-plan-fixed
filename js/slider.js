@@ -33,10 +33,25 @@ $(document).ready(function () {
     document
       .querySelector(".navbar-bottom")
       .classList.toggle("navbar-bottom--visible");
+    var $body = $(document.body);
+    // console.log("Клик по кнопке меню");
+    // document.querySelector(".navbar-bottom");
+
+    // menuButton.on("click");
+    // var $body = $(document.body);
+    // $body.css("overflow", "auto");
+    // $body.width("auto");
+    if ($body.css("overflow") == "hidden") {
+      $body.css("overflow", "auto");
+    } else {
+      $body.css("overflow", "hidden");
+    }
   });
+
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
+
   closeModalButton.on("click", closeModal);
 
   function openModal() {
