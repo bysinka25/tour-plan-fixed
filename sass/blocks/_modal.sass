@@ -15,7 +15,6 @@
       visibility: visible
       opacity: 1
   &__dialog
-    height: 487px
     position: fixed
     top: 50%
     left: 50%
@@ -24,11 +23,13 @@
     border-radius: 8px
     z-index: 101
     color: $light
+    max-height: 100%
     max-width: 478px
     transform: translate(-50%, -50%)
     visibility: hidden
     opacity: 0
     transition: opacity 0.3s
+    overflow: auto
     &--visible
       visibility: visible
       opacity: 1
